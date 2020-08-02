@@ -21,8 +21,10 @@ class Weather
       @humidity = attr[:current][:humidity]
       @visibility = attr[:current][:visibility]
       @uv_index = attr[:current][:uvi]
-      @sunrise = attr[:current][:sunrise]
-      @sunset = attr[:current][:sunset]
+      # @sunrise = attr[:current][:sunrise]
+      @sunrise = DateTime.strptime(attr[:current][:sunrise].to_s,'%s')
+      # @sunset = attr[:current][:sunset]
+      @sunset = DateTime.strptime(attr[:current][:sunset].to_s,'%s')
       @desc = attr[:current][:weather][0][:description]
       @daily_max = attr[:daily][0][:temp][:max]
       @daily_min = attr[:daily][0][:temp][:min]
