@@ -3,11 +3,11 @@ class Api::V1::ForecastsController < ApplicationController
     location = params[:location].downcase
     location_info = LocationSearchResults.new
     location_data = location_info.info(location)
-
-    lattitude = location_data.lat
-    longitude = location_data.lng
-
-    binding.pry
+   
+    weather = WeatherSearchResults.new
+    weather_data = weather.forecast(location_data.lat, location_data.lng)
+    forecast_data = Forecast.new(weather_data, location)
+    render json: ForecastSerializer.new(forecast_data)
   end 
 
 end
