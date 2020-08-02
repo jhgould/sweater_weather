@@ -7,6 +7,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'pry'
 gem 'travis'
+gem 'fast_jsonapi'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
