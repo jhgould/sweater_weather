@@ -4,7 +4,7 @@ RSpec.describe 'Sessions spec ', type: :feature do
     @user1 = User.create!(name: "User1", password: "password", password_confirmation: "password" )
   end 
 
-  it "user can log in and log out" do 
+  xit "user can log in and log out" do 
     visit "/login"
 
     fill_in "Username", with: @user1.name
