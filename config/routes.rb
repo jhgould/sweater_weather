@@ -4,6 +4,7 @@ namespace :api do
   namespace :v1 do 
     resource :forecast, only: [:show]
     resource :backgrounds, only:[:show] 
+    resource :trail, only: [:show]
   end 
 end 
  
