@@ -70,5 +70,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.filter_sensitive_data('<MAP_API_KEY>') { ENV['MAP_API_KEY'] }
   config.filter_sensitive_data('<WEATHER_API_KEY>') { ENV['WEATHER_API_KEY'] }
+  config.filter_sensitive_data('<WEATHER_API_KEY>') { ENV['WEATHER_API_KEY'] }
+  config.filter_sensitive_data('<HIKING_PRO_API>') { ENV['HIKING_PRO_API'] }
   config.configure_rspec_metadata!
 end

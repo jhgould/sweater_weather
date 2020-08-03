@@ -62,17 +62,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 02 Aug 2020 20:23:46 GMT
+      - Mon, 03 Aug 2020 17:55:56 GMT
       Age:
-      - '0'
+      - '77530'
       X-Served-By:
-      - cache-dca17734-DCA, cache-den19628-DEN
+      - cache-dca17734-DCA, cache-den19638-DEN
       X-Cache:
-      - MISS, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1596399826.039829,VS0,VE114
+      - S1596477356.355179,VS0,VE1
       Vary:
       - Accept-Encoding, Origin, Authorization, client-geo-region, client-geo-region
     body:
@@ -201,5 +201,5 @@ http_interactions:
         Mardis","first_name":"Patrick","last_name":"Mardis","twitter_username":null,"portfolio_url":"http://patrickjam.es","bio":null,"location":"Denver,
         CO","links":{"self":"https://api.unsplash.com/users/patrickjamesmardis","html":"https://unsplash.com/@patrickjamesmardis","photos":"https://api.unsplash.com/users/patrickjamesmardis/photos","likes":"https://api.unsplash.com/users/patrickjamesmardis/likes","portfolio":"https://api.unsplash.com/users/patrickjamesmardis/portfolio","following":"https://api.unsplash.com/users/patrickjamesmardis/following","followers":"https://api.unsplash.com/users/patrickjamesmardis/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1589465289414-2ba83a17d49dimage?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1589465289414-2ba83a17d49dimage?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1589465289414-2ba83a17d49dimage?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"patrickjamesmardis","total_collections":1,"total_likes":0,"total_photos":4,"accepted_tos":true},"tags":[{"type":"search","title":"building"},{"type":"search","title":"urban"},{"type":"search","title":"office
         building"}]}]}'
-  recorded_at: Sun, 02 Aug 2020 20:23:46 GMT
+  recorded_at: Mon, 03 Aug 2020 17:55:56 GMT
 recorded_with: VCR 6.0.0
