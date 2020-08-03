@@ -8,7 +8,6 @@ class MapQuestService
   def directions(to, from)
         conn = Faraday.new(url: "https://www.mapquestapi.com")
         response = conn.get("/directions/v2/route?key=#{ENV["MAP_API_KEY"]}&from=#{from}&to=#{to}&outFormat=json&routeType=fastest")
-        json = JSON.parse(response.body, symbolize_names: true)
-        binding.pry
+        JSON.parse(response.body, symbolize_names: true)
   end 
 end 

@@ -5,5 +5,6 @@ class LocationSearchResults
 
   def directions(to, from)
     directional_data = MapQuestService.new.directions(to, from)
+    Direction.new(directional_data)
   end 
 end 
