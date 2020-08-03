@@ -6,8 +6,8 @@ class Api::V1::TrailsController < ApplicationController
     nearby_trails = trail_data.nearby_trails(directions.lat, directions.lng, params[:location])
     weather_data = WeatherSearchResults.new
     trail_weather = weather_data.forecast(directions.lat, directions.lng)
-    trail_head_weather = Forecast.new(trail_weather, params[:to])
-    trail_head_info = TrailHeadInfo.new(nearby_trails, trail_head_weather)
+    trail_head_weather = TrailHeadForecast.new(trail_weather)
+    trail_head_info = TrailHeadInfo.new(params[:location], nearby_trails, trail_head_weather)
     render json: TrailHeadInfoSerializer.new(trail_head_info)
   end 
 end 
