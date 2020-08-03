@@ -1,10 +1,10 @@
 class TrailHeadInfo 
   attr_reader :distance, :trails, :weather, :id
-  def initialize(directions, trails,  weather)
+  def initialize(trails,  weather)
+    binding.pry
     @id = nil
-    @distance = directions.distance
-    @trails = trails 
     @weather = weather
+    @trails = trails 
     end
 
 end 
