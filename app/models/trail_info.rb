@@ -5,8 +5,6 @@ class TrailInfo
       @summary = data[:summary]
       @difficulty = data[:difficulty]
       @location = data[:location]
-      # @length = data[:length]
-      # @origin = origin
       @distance_to_trail = distance_to_trail(@location, origin)
     end
 
