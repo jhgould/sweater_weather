@@ -4,7 +4,8 @@ RSpec.describe 'Test trail head location info' do
       
       get "/api/v1/trail?from=denver,co&to=boulder,co"
       expect(response).to be_successful 
-      json = JSON.parse(response.body, symbolize_names: true)
+      binding.pry
+      # json = JSON.parse(response.body, symbolize_names: true)
     end 
 
 end
