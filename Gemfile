@@ -8,6 +8,7 @@ gem 'figaro'
 gem 'pry'
 gem 'travis'
 gem 'fast_jsonapi'
+gem 'bcrypt'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
