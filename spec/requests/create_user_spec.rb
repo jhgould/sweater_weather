@@ -23,4 +23,6 @@ RSpec.describe 'Tests create user api' do
     expect(json).to eq(error_response)
   end 
 
+
+
 end 
