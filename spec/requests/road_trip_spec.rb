@@ -6,6 +6,8 @@ RSpec.describe 'Road trip api tests' do
     user = User.create!(email: "idk@email.com", password:"password", api_key: "7692b571-971a-45e2-bd92-e908de0a3565")
     post '/api/v1/road_trip', params: trip
     expect(response).to be_successful
+    json = JSON.parse(response.body, symbolize_names: true)
+    expect(json[:data][:attributes].keys).to include(:id, :travel_time, :current_weather, :summary, :origin, :destination)
   end 
 
   it "test that a user with a nil token cannot make a request" do 
@@ -27,7 +29,6 @@ RSpec.describe 'Road trip api tests' do
     json = JSON.parse(response.body, symbolize_names: true)
     expect(json).to eq(error_response)
   end 
-
 
 
 end
