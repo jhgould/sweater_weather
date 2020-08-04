@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -74.84,
+    "lat": 7.33
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 94.37,
+    "feels_like": 98.56,
+    "temp_min": 94.37,
+    "temp_max": 94.37,
+    "pressure": 1008,
+    "humidity": 40,
+    "sea_level": 1008,
+    "grnd_level": 980
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.95,
+    "deg": 29
+  },
+  "clouds": {
+    "all": 29
+  },
+  "dt": 1596570575,
+  "sys": {
+    "country": "CO",
+    "sunrise": 1596538370,
+    "sunset": 1596583076
+  },
+  "timezone": -18000,
+  "id": 3665566,
+  "name": "Pueblo",
+  "cod": 200
+}
