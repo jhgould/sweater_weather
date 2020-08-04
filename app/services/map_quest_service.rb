@@ -2,7 +2,6 @@ class MapQuestService
 
   def location_data(location)
     response = conn.get("/geocoding/v1/address?key=#{ENV["MAP_API_KEY"]}&outFormat=json&location=#{location}&thumbMaps=false")
-    location_data = Location.new(json = JSON.parse(response.body, symbolize_names: true))
   end 
 
 

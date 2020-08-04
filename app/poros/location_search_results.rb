@@ -1,6 +1,7 @@
 class LocationSearchResults 
   def info(location)
-    location_data = MapQuestService.new.location_data(location)
+    response = MapQuestService.new.location_data(location)
+    Location.new(json = JSON.parse(response.body, symbolize_names: true))
   end 
 
   def travel_time(origin, destination)
