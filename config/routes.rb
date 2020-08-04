@@ -6,6 +6,7 @@ namespace :api do
     resource :backgrounds, only: [:show] 
     resource :users, only: [:create]
     resource :sessions, only: [:create]
+    resource :road_trip
   end 
 end 
  
