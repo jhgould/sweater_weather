@@ -6,8 +6,13 @@ class Api::V1::ForecastsController < ApplicationController
    
     weather = WeatherSearchResults.new
     weather_data = weather.forecast(location_data.lat, location_data.lng)
+    
     forecast_data = Forecast.new(weather_data, location)
     render json: ForecastSerializer.new(forecast_data)
   end 
 
 end
+
+
+
+
