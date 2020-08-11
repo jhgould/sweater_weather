@@ -14,3 +14,8 @@ class WeatherService
     Faraday.new(url: "https://api.openweathermap.org" )
   end 
 end 
+
+
+
+
+
