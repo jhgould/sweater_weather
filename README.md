@@ -4,7 +4,7 @@ Sweater Weather is a backend API for a service-oriented full-stack web applicati
 
 ## End Points 
 
-`GET '/api/v1/backgrounds?location=<city>,<state>'`
+GET `'/api/v1/backgrounds?location=<city>,<state>'`
 
 Example for this request: GET `'/api/v1/backgrounds?location=denver,co'`
 
@@ -21,7 +21,7 @@ Example for this request: GET `'/api/v1/backgrounds?location=denver,co'`
 }
 ```
 
-`GET '/api/v1/forecast?location=<city>,<state>'`
+GET `'/api/v1/forecast?location=<city>,<state>'`
 
 example response for this request: GET `'/api/v1/forecast?location=denver,co'`
 
@@ -48,5 +48,61 @@ example response for this request: GET `'/api/v1/forecast?location=denver,co'`
                 "daily_min": 54.14 ...
 ```
 
+POST `'/api/v1/users?email=<email>&password=<password>&password_confirmation=<password confirmation>'`
+
+example response for this request: POST `'/api/v1/users?email=you@example.com&password=password&password_confirmation=password'`
+
+```ruby 
+{
+    "data": {
+        "id": "9",
+        "type": "user",
+        "attributes": {
+            "email": "you@example.com",
+            "api_key": "ec03ad45-d3f4-40d1-a981-2fa74edcf8d3"
+        }
+    }
+}
+```
+
+POST `'/api/v1/sessions?email=<email>&password=<password>'`
+
+example response for this request: POST `'/api/v1/sessions?email=you@example.com&password=password'`
+
+```ruby 
+{
+    "data": {
+        "id": "9",
+        "type": "user",
+        "attributes": {
+            "email": "you@example.com",
+            "api_key": "2aee3f05-e4c8-4d5d-ba2f-8d2c0f116f29"
+        }
+    }
+}
+
+```
+
+POST `'/api/v1/road_trip?origin=<city>,<state>&destination=<city>,<state>&api_key=<api_key>'`
+
+example response for this request: POST `'/api/v1/road_trip?origin=denver,co&destination=pueblo,co&api_key=<api_key>'`
+
+```ruby
+{
+    "data": {
+        "id": null,
+        "type": "road_trip",
+        "attributes": {
+            "id": null,
+            "travel_time": "01:43:57",
+            "current_weather": 85.6,
+            "summary": "light rain",
+            "origin": "denver,co",
+            "destination": "pueblo,co"
+        }
+    }
+}
+
+```
 
 
