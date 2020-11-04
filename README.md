@@ -1,9 +1,8 @@
 # Sweater Weather API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sweater Weather is a backend API for a service-oriented full-stack web application. We were provided with a detailed front-end wireframe and expected JSON responses. Our goal was to consume multiple external APIs to gather and format the data required. 
 
-Things you may want to cover:
+## End Points 
 
 * Ruby version
 
