@@ -4,20 +4,4 @@ Sweater Weather is a backend API for a service-oriented full-stack web applicati
 
 ## End Points 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+GET '/api/v1/backgrounds?location=<city>,<state>'
