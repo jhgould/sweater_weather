@@ -4,4 +4,6 @@ Sweater Weather is a backend API for a service-oriented full-stack web applicati
 
 ## End Points 
 
+```ruby
 GET '/api/v1/backgrounds?location=<city>,<state>'
+```
